@@ -1,5 +1,5 @@
 #include <iostream>
-#include "/home/shaig93/Documents/c++/array_operations/array_op/arrays.hpp"
+#include "/home/shaig93/Documents/c++/array_op/array_op/arrays.hpp"
 #include <vector>
 #include "grid.hpp"
 using namespace std;
