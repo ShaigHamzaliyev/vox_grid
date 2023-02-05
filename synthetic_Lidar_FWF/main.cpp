@@ -36,6 +36,13 @@ int main() {
         std::cout << std::endl;
     }
 
+    Arange arange2(0.0, 3.0, .15);
+        std::vector<double> elevation = arange2.arange();
+        for (auto i : elevation) {
+            std::cout<<i<<" ";
+        }
+        std::cout<<std::endl;
+
 
     return 0;
 }
