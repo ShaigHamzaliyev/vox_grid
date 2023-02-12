@@ -3,6 +3,7 @@
 #include "gaussian.hpp"
 #include <vector>
 #include "/home/shaig93/Documents/c++/array_op/meshgrid/grid.hpp"
+#include "/home/shaig93/Documents/c++/array_op/array_op/flatten2D.hpp"
 using namespace std;
 
 
@@ -35,6 +36,13 @@ int main() {
         }
         std::cout << std::endl;
     }
+
+    Flat2D flat2d(grid_coords);
+    std::vector<std::pair<double, double>> flat = flat2d.flatten2d();
+    for (int i = 0; i<flat.size(); i++) {
+            std::cout<<"("<<flat[i].first<<", "<<flat[i].second<<"), ";
+    }
+        std::cout<<std::endl;
 
     Arange arange2(0.0, 3.0, .15);
         std::vector<double> elevation = arange2.arange();

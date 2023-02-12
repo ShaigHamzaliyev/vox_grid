@@ -2,14 +2,15 @@
 #include "/home/shaig93/Documents/c++/array_op/array_op/arrays.hpp"
 #include <vector>
 #include "grid.hpp"
+#include "flatten2D.hpp"
 using namespace std;
 
 int main() {
     double window_size = 1.0;
     double x_min = 0.0;
     double x_max = 7.0;
-    double y_min = 4.0;
-    double y_max = 8.0;
+    double y_min = 0.0;
+    double y_max = 7.0;
     Arange arangeX(x_min, x_max, window_size);
     std::vector<double> grid_center_x = arangeX.arange();
     int rows = grid_center_x.size();
